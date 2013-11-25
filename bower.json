@@ -1,6 +1,6 @@
 {
   "name": "type",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Component contributors"
   },
@@ -9,7 +9,7 @@
     "url": "git@github.com:matthewp/type.git",
     "github": "https://github.com/matthewp/type"
   },
-  licenses: [
+  "licenses": [
     {
       "type": "MIT",
       "url": "http://opensource.org/licenses/mit-license.php"
