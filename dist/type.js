@@ -1,5 +1,4 @@
 ;(function(){
-require.register("type/index.js", function(exports, require, module){
 
 /**
  * toString ref.
@@ -15,7 +14,7 @@ var toString = Object.prototype.toString;
  * @api public
  */
 
-module.exports = function(val){
+var type = function(val){
   switch (toString.call(val)) {
     case '[object Function]': return 'function';
     case '[object Date]': return 'date';
@@ -33,10 +32,10 @@ module.exports = function(val){
   return typeof val;
 };
 
-});if (typeof exports == "object") {
-  module.exports = require("type");
+if (typeof exports == "object") {
+  module.exports = type;
 } else if (typeof define == "function" && define.amd) {
-  define(function(){ return require("type"); });
+  define(function(){ return type; });
 } else {
-  this["type"] = require("type");
+  this["type"] = type;
 }})();
